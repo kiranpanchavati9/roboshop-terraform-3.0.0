@@ -1,5 +1,5 @@
 # Terraform configuration for AWS resources
-# Security group, EC2 instance, and Route 53 record for the frontend application 
+# Security group, EC2 instance, and Route 53 record for the Roboshop application
 
 resource "aws_security_group" "allow_ports_firewall_roboshop" {
   name        = "allow_ports_firewall_roboshop"
