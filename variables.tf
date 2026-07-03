@@ -49,7 +49,7 @@ variable components {
     "user" = ""
     "shipping" = ""
     "payment" = ""
-    "mysql" = ""
+#    "mysql" = ""
     "redis" = ""
     "rabbitmq" = ""
     "mongodb" = ""
