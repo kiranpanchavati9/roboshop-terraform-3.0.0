@@ -52,3 +52,4 @@ resource "aws_route53_record" "a-records" {
   ttl     = var.ttl
   records = [aws_instance.instance[each.key].public_ip]
 }
+
