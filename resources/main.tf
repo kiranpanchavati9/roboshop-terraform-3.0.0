@@ -53,3 +53,10 @@ resource "aws_route53_record" "a-records" {
   records = [aws_instance.instance[each.key].public_ip]
 }
 
+resource "aws_instance" "web" {
+  # ...
+
+  provisioner "local-exec" {
+    command = "echo The server's IP address is ${self.private_ip}"
+  }
+}
